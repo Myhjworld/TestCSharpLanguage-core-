@@ -1,4 +1,5 @@
 ﻿using System;
+using TestCSharpLanguage.Linq;
 
 namespace TestCSharpLanguage
 {
@@ -9,7 +10,8 @@ namespace TestCSharpLanguage
             Console.WriteLine("Hello World!");
             Console.WriteLine("Test C# Languages");
             string name = "hj";
-			Console.WriteLine($"{name} 的测试项目！");
+            Console.WriteLine($"{name} 的测试项目！");
+            LinqToSql linqToSql = new LinqToSql();
         }
     }
 }

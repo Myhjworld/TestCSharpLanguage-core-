@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCSharpLanguage", "TestCSharpLanguage\TestCSharpLanguage.csproj", "{2305BF00-B795-472C-863B-A2B4FB180052}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{EA02AE8E-5103-45EC-955F-94611CF4EE99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{2305BF00-B795-472C-863B-A2B4FB180052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2305BF00-B795-472C-863B-A2B4FB180052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2305BF00-B795-472C-863B-A2B4FB180052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA02AE8E-5103-45EC-955F-94611CF4EE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA02AE8E-5103-45EC-955F-94611CF4EE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA02AE8E-5103-45EC-955F-94611CF4EE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA02AE8E-5103-45EC-955F-94611CF4EE99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
