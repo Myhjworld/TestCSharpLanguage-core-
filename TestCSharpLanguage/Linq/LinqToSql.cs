@@ -54,6 +54,21 @@ namespace TestCSharpLanguage.Linq
                 });
                 Console.WriteLine(result);
             }
+            {
+                Console.WriteLine("*************表达式目录树+静态=优化ClassCopy*************");
+                People people = new People(){
+                    Id = 1,
+                    Name="hj",
+                    Age=11
+                };
+                Console.WriteLine(people);
+                Console.WriteLine("*************表达式目录树+静态字典=优化ClassCopy*************");
+                PeopleCopy peopleCopy1 = Common.ExpressionCommon.StaticDic_ClassCopy.Trans<PeopleCopy, People>(people);
+                PeopleCopy peopleCopy2 = Common.ExpressionCommon.StaticDic_ClassCopy.Trans<PeopleCopy, People>(people);
+                Console.WriteLine("*************表达式目录树+静态泛型=优化ClassCopy*************");
+                PeopleCopy peopleCopy3 = Common.ExpressionCommon.StaticT_ClassCopy<People, PeopleCopy>.Trans(people);
+                PeopleCopy peopleCopy4 = Common.ExpressionCommon.StaticT_ClassCopy<People, PeopleCopy>.Trans(people);
+            }
         }
     }
 }
