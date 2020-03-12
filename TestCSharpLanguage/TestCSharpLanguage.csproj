@@ -7,11 +7,16 @@
 
   <ItemGroup>
     <Folder Include="Linq\" />
+    <Folder Include="Base\" />
+    <Folder Include="TaskTest\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\DesignModel\DesignModel.csproj" />
     <ProjectReference Include="..\AOP\AOP.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>
