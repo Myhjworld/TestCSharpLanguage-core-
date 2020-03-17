@@ -13,11 +13,19 @@ namespace MVC
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args) //跨平台服务器
+                .Build()
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging((context, LoggingBuilder) =>
+                {
+                    LoggingBuilder.AddFilter("System", LogLevel.Warning);
+                    LoggingBuilder.AddFilter("Microsoft", LogLevel.Warning);
+                    LoggingBuilder.AddLog4Net();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

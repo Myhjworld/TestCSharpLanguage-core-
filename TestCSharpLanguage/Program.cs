@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
+using System.Linq;
 
 namespace TestCSharpLanguage
 {
@@ -15,9 +16,10 @@ namespace TestCSharpLanguage
         static void Main(string[] args)
         {
             Console.WriteLine($"测试");
-            
 
-            switchs("hj");
+
+            var ds = new DataStruct.DataStruct();
+            ds.DataStructList();
 
         }
 

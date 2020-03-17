@@ -9,6 +9,7 @@
     <Folder Include="Linq\" />
     <Folder Include="Base\" />
     <Folder Include="TaskTest\" />
+    <Folder Include="DataStruct\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
